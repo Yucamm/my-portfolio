@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Salon BLOOM | 渋谷の完全予約制プライベートサロン・髪質改善</title>
+    <meta name="description" content="渋谷駅徒歩3分。30代〜50代の大人女性のための完全予約制プライベートサロン「BLOOM」。髪質改善トリートメント専門で、あなたの「似合う」をご提案します。">
+
+    <meta property="og:title" content="Hair Salon BLOOM | 渋谷の完全予約制プライベートサロン">
+    <meta property="og:description" content="渋谷駅徒歩3分。大人女性のためのプライベートサロンで、究極の髪質改善体験を。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://placehold.co/1200x630/f5f0eb/8b7355?text=BLOOM+Hair+Salon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        salon: {
+                            bg: '#f5f0eb',
+                            accent: '#8b7355',
+                            text: '#3e3124',
+                            light: '#FAF7F5',
+                            line: '#06C755',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        en: ['"Montserrat"', 'sans-serif'],
+                    },
+                    spacing: { 'section': '120px' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-feature-settings: "palt" 1;
+            color: #3e3124;
+            background-color: #f5f0eb;
+        }
+        .vertical-rl { writing-mode: vertical-rl; text-orientation: mixed; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f5f0eb; }
+        ::-webkit-scrollbar-thumb { background-color: #8b7355; border-radius: 20px; }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        a:focus-visible, button:focus-visible { outline: 2px solid #8b7355; outline-offset: 4px; }
+    </style>
+</head>
+<body class="antialiased selection:bg-salon-accent selection:text-white pb-24 md:pb-0">
+
+    <header class="fixed top-0 w-full z-50 bg-[#f5f0eb]/80 backdrop-blur-md border-b border-salon-accent/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="font-en text-2xl tracking-[0.2em] font-light text-salon-accent hover:opacity-70 transition-opacity">BLOOM</a>
+            <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest text-salon-accent/80">
+                <a href="#concept" class="hover:text-salon-accent transition-colors">CONCEPT</a>
+                <a href="#menu" class="hover:text-salon-accent transition-colors">MENU</a>
+                <a href="#voice" class="hover:text-salon-accent transition-colors">VOICE</a>
+                <a href="#access" class="hover:text-salon-accent transition-colors">ACCESS</a>
+                <a href="#reserve" class="hover:text-salon-accent transition-colors">RESERVE</a>
+            </div>
+            <a href="tel:03-0000-0000" class="hidden md:flex items-center gap-2 bg-[#dc2626] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#ef4444] hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-md shadow-red-900/20">
+                <i class="ph ph-phone text-lg"></i>
+                <span class="font-en tracking-wider">RESERVE</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1a1a2e]">
+        <div class="absolute inset-x-4 top-24 bottom-4 md:inset-x-12 md:top-28 md:bottom-12 rounded-t-[4rem] rounded-b-lg overflow-hidden flex shadow-2xl shadow-black/30 bg-[#1a1a2e]">
+            <img src="https://placehold.co/1920x1080/1a1a2e/8b7355?text=Sophisticated+Salon+Atmosphere" alt="BLOOM Salon Interior" class="w-full h-full object-cover opacity-70 scale-105 transform hover:scale-110 transition-transform duration-[20s] ease-out">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/95 via-[#1a1a2e]/60 to-[#1a1a2e]/20"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-8 md:px-16 flex flex-col justify-center h-full mt-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end w-full">
+                <div class="mb-12 md:mb-0 max-w-lg fade-up">
+                    <p class="text-sm md:text-base tracking-[0.15em] text-salon-accent/80 mb-6 font-medium bg-salon-bg px-4 py-1.5 inline-block rounded-full shadow-sm">渋谷駅徒歩3分・完全予約制のプライベートサロン</p>
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl text-white leading-[1.6] md:leading-[1.4] font-light">
+                        <span class="block">あなたの<span class="text-salon-bg font-normal border-b px-1 border-salon-bg">"似合う"</span>を、</span>
+                        <span class="block mt-2">見つける場所</span>
+                    </h1>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="tel:03-0000-0000" class="flex items-center justify-center gap-3 bg-[#dc2626] text-white px-8 py-4 rounded-xl text-lg font-medium shadow-xl shadow-red-900/40 hover:bg-[#ef4444] hover:brightness-110 hover:-translate-y-1 hover:scale-[1.03] transition-all duration-300 group">
+                            <i class="ph ph-phone text-2xl group-hover:rotate-12 transition-transform"></i>
+                            03-0000-0000
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block vertical-rl text-right text-salon-accent tracking-[0.4em] text-sm font-light fade-up" style="transition-delay: 0.2s;">
+                    <span class="font-en">HAIR SALON</span><br>大人のための髪質改善空間
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section relative z-10" id="concept">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="font-serif text-salon-accent text-lg italic tracking-widest block mb-2">Concerns</span>
+                <h2 class="text-2xl md:text-3xl tracking-[0.1em] text-salon-text font-medium relative inline-block">
+                    こんなお悩みありませんか？
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-salon-accent"></div>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+                <div class="bg-white rounded-2xl p-8 text-center shadow-lg shadow-salon-accent/5 fade-up hover:-translate-y-2 transition-transform duration-300 relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-salon-bg rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500 opacity-50"></div>
+                    <div class="w-16 h-16 mx-auto bg-salon-bg rounded-full flex items-center justify-center text-salon-accent mb-6"><i class="ph ph-wind text-3xl"></i></div>
+                    <h3 class="text-lg font-bold mb-4 tracking-wider text-salon-text">髪のパサつき</h3>
+                    <p class="text-sm text-salon-text/70 leading-relaxed">年齢と共に髪の水分量が減少し、まとまらない。潤いのある艶髪を取り戻したい。</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center shadow-lg shadow-salon-accent/5 fade-up hover:-translate-y-2 transition-transform duration-300 relative group overflow-hidden" style="transition-delay: 0.1s;">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-salon-bg rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500 opacity-50"></div>
+                    <div class="w-16 h-16 mx-auto bg-salon-bg rounded-full flex items-center justify-center text-salon-accent mb-6"><i class="ph ph-sparkle text-3xl"></i></div>
+                    <h3 class="text-lg font-bold mb-4 tracking-wider text-salon-text">白髪が目立つ</h3>
+                    <p class="text-sm text-salon-text/70 leading-relaxed">白髪染めによる髪のダメージが気になる。暗くならず、透明感のあるカラーを楽しみたい。</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center shadow-lg shadow-salon-accent/5 fade-up hover:-translate-y-2 transition-transform duration-300 relative group overflow-hidden" style="transition-delay: 0.2s;">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-salon-bg rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-500 opacity-50"></div>
+                    <div class="w-16 h-16 mx-auto bg-salon-bg rounded-full flex items-center justify-center text-salon-accent mb-6"><i class="ph ph-scissors text-3xl"></i></div>
+                    <h3 class="text-lg font-bold mb-4 tracking-wider text-salon-text">スタイリングが決まらない</h3>
+                    <p class="text-sm text-salon-text/70 leading-relaxed">朝のセットに時間がかかる。骨格に合わせた、手入れが簡単なスタイルになりたい。</p>
+                </div>
+            </div>
+            <div class="text-center mt-12 fade-up">
+                <i class="ph ph-caret-down text-4xl text-salon-accent/50 animate-bounce"></i>
+                <p class="mt-4 text-lg font-medium text-salon-accent tracking-widest">BLOOMがすべて解決します</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section bg-white">
+        <div class="max-w-6xl mx-auto px-6 overflow-hidden">
+            <div class="text-center mb-20 fade-up">
+                <span class="font-serif text-salon-accent text-lg italic tracking-widest block mb-2">Why Choose Us</span>
+                <h2 class="text-2xl md:text-3xl tracking-[0.1em] text-salon-text font-medium relative inline-block">
+                    当サロンが選ばれる3つの理由
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-salon-accent"></div>
+                </h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16 mb-24 fade-up">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-salon-bg rounded-tl-[4rem] rounded-br-[4rem] -z-10 transform -rotate-2"></div>
+                    <img src="https://placehold.co/800x600/EAE4DD/8b7355?text=Hair+Treatment" alt="髪質改善トリートメントの施術風景" class="w-full aspect-[4/3] object-cover rounded-tl-[3rem] rounded-br-[3rem] shadow-xl">
+                    <div class="absolute -top-6 -left-6 font-serif text-8xl text-salon-bg/80 font-bold drop-shadow-md">01</div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-salon-text leading-relaxed tracking-wider border-l-4 border-salon-accent pl-4">
+                        <span class="text-sm font-normal text-salon-accent block mb-2">専門知識で髪を根本から美しく</span>
+                        髪質改善トリートメント専門
+                    </h3>
+                    <p class="text-salon-text/80 leading-loose tracking-wide text-sm md:text-base">繰り返しのカラーや加齢によるエイジング毛に対し、表面のコーティングだけでなく髪の内部から栄養を補給。驚くほど柔らかく、本来のツヤと手触りを取り戻す究極の髪質改善体験をご提供します。</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16 mb-24 fade-up">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-salon-bg rounded-tr-[4rem] rounded-bl-[4rem] -z-10 transform rotate-2"></div>
+                    <img src="https://placehold.co/800x600/EAE4DD/8b7355?text=Private+Room" alt="完全プライベートな空間" class="w-full aspect-[4/3] object-cover rounded-tr-[3rem] rounded-bl-[3rem] shadow-xl">
+                    <div class="absolute -top-6 -right-6 font-serif text-8xl text-salon-bg/80 font-bold drop-shadow-md">02</div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-salon-text leading-relaxed tracking-wider border-l-4 border-salon-accent pl-4">
+                        <span class="text-sm font-normal text-salon-accent block mb-2">周りを気にせずリラックス</span>
+                        完全個室のプライベートサロン
+                    </h3>
+                    <p class="text-salon-text/80 leading-loose tracking-wide text-sm md:text-base">当店は完全予約制となっており、他のお客様と顔を合わせることのないプライベート空間です。日々の喧騒から離れ、ゆったりとした音楽と香りに包まれながら、極上の癒やし時間をお過ごしいただけます。</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16 fade-up">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-salon-bg rounded-tl-[4rem] rounded-br-[4rem] -z-10 transform -rotate-1"></div>
+                    <img src="https://placehold.co/800x600/EAE4DD/8b7355?text=Shibuya+Station" alt="通いやすい立地" class="w-full aspect-[4/3] object-cover rounded-tl-[3rem] rounded-br-[3rem] shadow-xl">
+                    <div class="absolute -top-6 -left-6 font-serif text-8xl text-salon-bg/80 font-bold drop-shadow-md">03</div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-salon-text leading-relaxed tracking-wider border-l-4 border-salon-accent pl-4">
+                        <span class="text-sm font-normal text-salon-accent block mb-2">お買い物帰りにも最適</span>
+                        渋谷駅徒歩3分の好立地
+                    </h3>
+                    <p class="text-salon-text/80 leading-loose tracking-wide text-sm md:text-base">忙しい大人女性が通いやすいよう、スクランブルスクエア等からもほど近い場所にオープン。お出かけ前や、お仕事帰りにもスムーズにご来店いただけます。特別な日だけでなく、日常のケアとして寄り添います。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section relative" id="menu">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-white opacity-40 -z-10 transform skew-x-12 origin-top"></div>
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="font-serif text-salon-accent text-lg italic tracking-widest block mb-2">Menu & Price</span>
+                <h2 class="text-2xl md:text-3xl tracking-[0.1em] text-salon-text font-medium relative inline-block">
+                    メニュー・料金表
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-salon-accent"></div>
+                </h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg border-t-8 border-salon-accent overflow-hidden fade-up">
+                <table class="w-full text-left border-collapse">
+                    <tbody>
+                        <tr class="border-b border-salon-bg hover:bg-salon-light transition-colors group">
+                            <td class="py-6 px-6 md:px-10">
+                                <h4 class="text-lg font-medium text-salon-text mb-1 tracking-wider">カット</h4>
+                                <span class="text-xs text-salon-text/60">シャンプー・ブロー込。骨格補正カットで扱いやすい髪へ。</span>
+                            </td>
+                            <td class="py-6 px-6 md:px-10 text-right font-en text-xl tracking-wider text-salon-accent">¥6,600</td>
+                        </tr>
+                        <tr class="border-b border-salon-bg hover:bg-salon-light transition-colors group">
+                            <td class="py-6 px-6 md:px-10">
+                                <h4 class="text-lg font-medium text-salon-text mb-1 tracking-wider">カット + カラー</h4>
+                                <span class="text-xs text-salon-text/60">ダメージレスな薬剤を使用。白髪染め（グレイカラー）も対応。</span>
+                            </td>
+                            <td class="py-6 px-6 md:px-10 text-right font-en text-xl tracking-wider text-salon-accent">¥13,200</td>
+                        </tr>
+                        <tr class="relative bg-salon-light/50 border-b-2 border-salon-accent hover:bg-salon-light transition-colors group">
+                            <td class="py-8 px-6 md:px-10">
+                                <span class="absolute -top-3 left-6 md:left-10 bg-gradient-to-r from-[#D4AF37] to-[#B38B22] text-white text-[10px] font-bold px-3 py-1 rounded-sm shadow-md tracking-widest uppercase">人気 No.1</span>
+                                <h4 class="text-xl font-bold text-salon-text mb-1 tracking-wider">髪質改善トリートメント</h4>
+                                <span class="text-xs md:text-sm text-salon-text/70 mt-2 block w-3/4">当サロン独自の高濃度栄養補給。見違えるようなツヤと手触りを実現する最高峰ケア。</span>
+                            </td>
+                            <td class="py-8 px-6 md:px-10 text-right font-en text-2xl font-medium tracking-wider text-salon-accent">¥16,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-xs text-salon-text/60 mt-6 tracking-wide fade-up">※ 価格はすべて税込表示です。<br class="md:hidden">※ クレジットカード・各種電子マネーご利用いただけます。</p>
+        </div>
+    </section>
+
+    <section class="py-section bg-salon-text text-salon-bg" id="voice">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="font-serif text-salon-accent text-lg italic tracking-widest block mb-2">Customer Voice</span>
+                <h2 class="text-2xl md:text-3xl tracking-[0.1em] text-white font-medium relative inline-block">
+                    お客様の声
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-salon-accent"></div>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm fade-up hover:bg-white/10 transition-colors duration-300">
+                    <div class="flex text-[#D4AF37] mb-4 text-lg"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <h4 class="text-white text-lg font-medium mb-3 tracking-wider">「自分の髪じゃないみたい」</h4>
+                    <p class="text-salon-bg/80 text-sm leading-relaxed mb-6">長年のカラーによるパサつきに悩んでいましたが、こちらの髪質改善を受けて驚きました。手ぐしを通すだけでサラサラで、朝のセットが本当に楽になりました。個室の雰囲気も最高です。</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-en text-sm">30s</div>
+                        <span class="text-sm text-salon-bg/60">A.K様 (30代女性 / 会社員)</span>
+                    </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm fade-up hover:bg-white/10 transition-colors duration-300" style="transition-delay: 0.1s;">
+                    <div class="flex text-[#D4AF37] mb-4 text-lg"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <h4 class="text-white text-lg font-medium mb-3 tracking-wider">「白髪染めへの抵抗が消えた」</h4>
+                    <p class="text-salon-bg/80 text-sm leading-relaxed mb-6">白髪染め＝暗くなる、傷むというイメージでしたが、綺麗に染まりつつ髪に艶が出ました！マンツーマンで丁寧なカウンセリングをしてくださるので、安心してお任せできます。</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-en text-sm">40s</div>
+                        <span class="text-sm text-salon-bg/60">M.S様 (40代女性 / 主婦)</span>
+                    </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm fade-up hover:bg-white/10 transition-colors duration-300" style="transition-delay: 0.2s;">
+                    <div class="flex text-[#D4AF37] mb-4 text-lg"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <h4 class="text-white text-lg font-medium mb-3 tracking-wider">「通い続けたい唯一のサロン」</h4>
+                    <p class="text-salon-bg/80 text-sm leading-relaxed mb-6">渋谷の駅近なのに、店内に入るととても静かで癒されます。担当のスタイリストさんの技術も高く、いつも私に一番似合うスタイルを提案してくれます。これからもよろしくお願いします。</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-en text-sm">50s</div>
+                        <span class="text-sm text-salon-bg/60">Y.T様 (50代女性 / 自営業)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section overflow-hidden bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 pb-16 border-b border-salon-accent/10">
+                <div class="w-48 h-64 md:w-64 md:h-80 relative flex-shrink-0 fade-up">
+                    <div class="absolute inset-0 border border-salon-accent transform translate-x-4 translate-y-4 rounded-t-full"></div>
+                    <img src="https://placehold.co/600x800/f5f0eb/8b7355?text=Stylist+Portrait" alt="Owner Stylist" class="w-full h-full object-cover relative z-10 rounded-t-full shadow-lg">
+                </div>
+                <div class="max-w-lg fade-up text-center md:text-left">
+                    <span class="font-en text-xs tracking-[0.2em] text-salon-accent mb-2 block uppercase">Owner Stylist</span>
+                    <h3 class="text-3xl font-light text-salon-text tracking-widest mb-2 border-b border-salon-accent/20 pb-4 inline-block">
+                        青山 結衣 <span class="text-sm font-en text-salon-accent ml-2 relative -top-1">Yui Aoyama</span>
+                    </h3>
+                    <p class="mt-6 text-sm md:text-base text-salon-text/80 leading-loose tracking-wide">
+                        都内有名サロンで店長を務めた後、独立。15年以上のキャリアに基づき、特にエイジングケアと髪質改善に特化した技術を追求してまいりました。<br><br>
+                        「年齢を重ねるごとに、もっと自分の髪を好きになってほしい」<br>
+                        その想いを胸に、一人ひとりのお悩みに真摯に向き合います。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section relative" id="access">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 bg-white p-8 md:p-16 rounded-[2rem] shadow-xl shadow-salon-text/5 fade-up">
+                <div class="w-full lg:w-1/2">
+                    <span class="font-serif text-salon-accent text-xl italic tracking-widest block mb-4">Salon Information</span>
+                    <h2 class="text-3xl font-en tracking-[0.2em] font-light text-salon-text mb-8">BLOOM</h2>
+                    <table class="w-full text-sm leading-loose tracking-wider border-t border-salon-accent/20">
+                        <tbody>
+                            <tr class="border-b border-salon-accent/10">
+                                <th class="py-4 font-normal text-salon-text/60 w-32 align-top text-left">OPEN</th>
+                                <td class="py-4 text-salon-text">10:00 - 20:00<br>(最終受付: カット 19:00 / カラー 18:00)</td>
+                            </tr>
+                            <tr class="border-b border-salon-accent/10">
+                                <th class="py-4 font-normal text-salon-text/60 align-top text-left">CLOSE</th>
+                                <td class="py-4 text-salon-text">毎週火曜日・第2第4水曜日</td>
+                            </tr>
+                            <tr class="border-b border-salon-accent/10">
+                                <th class="py-4 font-normal text-salon-text/60 align-top text-left">ADDRESS</th>
+                                <td class="py-4 text-salon-text">
+                                    〒150-0002<br>
+                                    東京都渋谷区渋谷X-X-X ブルームビル3F<br>
+                                    <span class="text-salon-accent font-medium mt-1 inline-block">JR渋谷駅 東口より徒歩3分</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-full lg:w-1/2 h-64 lg:h-auto min-h-[300px] bg-salon-bg rounded-xl overflow-hidden relative group">
+                    <img src="https://placehold.co/800x600/EAE4DD/8b7355?text=Google+Maps+Area" alt="店舗周辺マップ" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <a href="#" class="absolute bottom-4 right-4 bg-white/90 backdrop-blur text-salon-accent px-4 py-2 text-xs font-bold rounded shadow-lg hover:bg-white transition-colors flex items-center gap-2">
+                        <i class="ph ph-map-pin"></i> Google Mapを開く
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ONLINE RESERVATION (Calendly) -->
+    <section id="reserve" class="py-section bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-40 bg-salon-bg rounded-b-[50%] -z-0"></div>
+        <div class="relative max-w-5xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-10 md:mb-14 fade-up">
+                <span class="font-serif text-salon-accent text-lg italic tracking-widest block mb-2">Online Reservation</span>
+                <h2 class="text-2xl md:text-3xl tracking-[0.1em] text-salon-text font-medium relative inline-block">
+                    ご予約はこちら
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-salon-accent"></div>
+                </h2>
+                <p class="mt-10 text-sm md:text-base text-salon-text/80 tracking-wider flex items-center justify-center gap-2">
+                    <i class="ph ph-clock text-salon-accent text-xl"></i>
+                    24時間いつでもオンライン予約できます
+                </p>
+                <p class="mt-2 text-xs text-salon-text/60">下記カレンダーから、ご希望の日時をお選びください。</p>
+            </div>
+
+            <!-- Calendly inline widget wrapper styled to match LP -->
+            <div class="fade-up bg-white rounded-2xl shadow-2xl shadow-salon-accent/10 border border-salon-accent/15 overflow-hidden p-2 md:p-4">
+                <div class="calendly-inline-widget rounded-xl overflow-hidden"
+                     data-url="https://calendly.com/example/30min"
+                     style="min-width:320px;height:700px;"></div>
+            </div>
+
+            <!-- Fallback / alternative CTAs -->
+            <div class="mt-10 fade-up">
+                <p class="text-center text-xs text-salon-text/60 mb-5 tracking-wider">
+                    ※ カレンダーが表示されない場合は、下記よりご連絡ください。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:03-0000-0000" class="flex items-center justify-center gap-3 bg-[#dc2626] text-white px-6 py-4 rounded-xl font-medium shadow-lg shadow-red-900/20 hover:bg-[#ef4444] hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto sm:min-w-[240px]">
+                        <i class="ph-fill ph-phone text-xl"></i>
+                        <span class="tracking-wider">お電話でのご予約</span>
+                    </a>
+                    <a href="#" class="flex items-center justify-center gap-3 bg-[#06C755] text-white px-6 py-4 rounded-xl font-medium shadow-lg shadow-[#06C755]/20 hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto sm:min-w-[240px]">
+                        <i class="ph-fill ph-chat-circle-text text-xl"></i>
+                        <span class="tracking-wider">LINEで予約する</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#EAE4DD] text-center border-t border-salon-accent/20">
+        <div class="max-w-3xl mx-auto px-6 fade-up">
+            <h2 class="text-2xl tracking-[0.15em] text-salon-text font-light mb-4">ご予約・お問い合わせ</h2>
+            <p class="text-sm text-salon-text/70 mb-10 tracking-wider">当サロンは完全予約制となります。<br class="md:hidden">お電話またはLINEよりご予約をお願いいたします。</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="tel:03-0000-0000" class="flex flex-col items-center justify-center bg-[#dc2626] text-white px-8 py-6 rounded-xl hover:bg-[#ef4444] hover:brightness-110 hover:-translate-y-1 hover:scale-[1.03] transition-all duration-300 shadow-lg shadow-red-900/30 group w-full md:w-64">
+                    <i class="ph ph-phone text-3xl mb-2 text-white group-hover:animate-pulse"></i>
+                    <span class="text-xs tracking-wider mb-1">お電話でのご予約</span>
+                    <span class="font-en text-xl tracking-wider font-medium">03-0000-0000</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center bg-[#06C755] text-white px-8 py-6 rounded-xl hover:-translate-y-1 transition-all shadow-lg hover:shadow-[#06C755]/30 group w-full md:w-64">
+                    <i class="ph-fill ph-chat-circle-text text-3xl mb-2"></i>
+                    <span class="text-xs tracking-wider mb-1">24時間受付</span>
+                    <span class="font-bold text-lg tracking-wider">LINE で予約する</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-salon-text text-salon-bg/50 py-8 text-center text-xs tracking-widest font-en pb-32 md:pb-8">
+        &copy; 2026 Hair Salon BLOOM All Rights Reserved.
+    </footer>
+
+    <div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-white shadow-[0_-4px_20px_rgba(0,0,0,0.05)] border-t border-salon-accent/10 flex">
+        <a href="tel:03-0000-0000" class="flex-1 py-4 flex flex-col items-center justify-center bg-[#dc2626] text-white hover:bg-[#ef4444] hover:brightness-110 active:brightness-95 transition-all duration-300">
+            <i class="ph ph-phone text-xl mb-1"></i>
+            <span class="text-[10px] font-bold tracking-widest">お電話</span>
+        </a>
+        <a href="#" class="flex-[1.5] py-4 flex flex-col items-center justify-center bg-[#06C755] text-white active:bg-[#05b34c] transition-colors">
+            <i class="ph-fill ph-chat-circle-text text-xl mb-1"></i>
+            <span class="text-[10px] font-bold tracking-widest">LINE予約</span>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

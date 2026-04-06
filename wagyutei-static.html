@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>炭火焼肉 和牛亭 | 福岡・中央区 A5黒毛和牛専門</title>
+<meta name="description" content="福岡市中央区の炭火焼肉「和牛亭」。A5ランク黒毛和牛を産地直送。完全個室完備で接待・記念日に最適な空間をご用意しております。">
+<meta property="og:title" content="炭火焼肉 和牛亭 | A5黒毛和牛専門">
+<meta property="og:description" content="至福の一皿を、あなたに。福岡・中央区の高級焼肉店。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://placehold.co/1200x630/1a1a1a/c9a84c?text=Wagyutei">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: { DEFAULT: '#1a1a1a', soft: '#252525', line: '#333333' },
+        gold: { DEFAULT: '#c9a84c', light: '#e0c474', dark: '#9c7f33' }
+      },
+      fontFamily: {
+        serif: ['"Shippori Mincho"', 'serif'],
+        en: ['"Cormorant Garamond"', 'serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Shippori Mincho', serif; background: #1a1a1a; color: #e8e8e8; font-feature-settings: "palt" 1; }
+.fade-up { opacity: 0; transform: translateY(30px); transition: all 1s cubic-bezier(.16,1,.3,1); }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.gold-line { background: linear-gradient(90deg, transparent, #c9a84c, transparent); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background: #c9a84c; }
+.section-title-en { font-family: 'Cormorant Garamond', serif; letter-spacing: .3em; color: #c9a84c; font-size: .85rem; }
+</style>
+</head>
+<body class="bg-ink pb-24 md:pb-0">
+
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-gold/20">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <span class="font-en text-2xl text-gold tracking-widest">和牛亭</span>
+      <span class="hidden sm:block text-[10px] tracking-[0.3em] text-gold/60">WAGYUTEI</span>
+    </a>
+    <nav class="hidden md:flex gap-7 text-xs tracking-[0.2em] text-gray-300">
+      <a href="#concept" class="hover:text-gold transition">CONCEPT</a>
+      <a href="#course" class="hover:text-gold transition">COURSE</a>
+      <a href="#menu" class="hover:text-gold transition">MENU</a>
+      <a href="#room" class="hover:text-gold transition">ROOM</a>
+      <a href="#access" class="hover:text-gold transition">ACCESS</a>
+    </nav>
+    <a href="tel:092-000-0000" class="hidden md:flex items-center gap-2 border border-gold text-gold px-5 py-2 text-xs tracking-widest hover:bg-gold hover:text-ink transition">
+      <i class="ph ph-phone"></i> RESERVE
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://placehold.co/1920x1280/1a1a1a/c9a84c?text=A5+WAGYU" alt="A5和牛" class="w-full h-full object-cover opacity-50">
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-ink/40"></div>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-6 md:px-12 w-full z-10">
+    <div class="max-w-2xl fade-up">
+      <p class="section-title-en mb-6">― FUKUOKA YAKINIKU ―</p>
+      <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl text-white leading-[1.5] md:leading-[1.4] mb-8 tracking-wider">
+        至福の一皿を、<br><span class="text-gold">あなたに。</span>
+      </h1>
+      <div class="w-24 h-px bg-gold mb-6"></div>
+      <p class="text-gray-300 text-sm md:text-base leading-loose mb-10 tracking-wider">
+        産地直送のA5ランク黒毛和牛と、<br>
+        職人の手仕事が織りなす特別なひととき。<br>
+        福岡・中央区、完全個室の隠れ家で。
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:092-000-0000" class="flex items-center justify-center gap-3 bg-gold text-ink px-8 py-4 text-sm tracking-[0.2em] font-bold hover:bg-gold-light transition group">
+          <i class="ph-fill ph-phone text-lg"></i> ご予約 092-000-0000
+        </a>
+        <a href="#cta" class="flex items-center justify-center gap-3 border border-gold text-gold px-8 py-4 text-sm tracking-[0.2em] hover:bg-gold/10 transition">
+          <i class="ph ph-calendar-check text-lg"></i> ネット予約
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-gold/60 animate-bounce">
+    <i class="ph ph-caret-down text-2xl"></i>
+  </div>
+</section>
+
+<!-- Concept -->
+<section id="concept" class="py-24 md:py-32 bg-ink-soft relative">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― OUR COMMITMENT ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">こ だ わ り</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="text-center fade-up">
+        <div class="relative aspect-square mb-6 overflow-hidden">
+          <img src="https://placehold.co/600x600/252525/c9a84c?text=A5+Beef" alt="肉質" class="w-full h-full object-cover">
+          <div class="absolute inset-0 border border-gold/30 m-3"></div>
+        </div>
+        <p class="font-en text-gold text-sm tracking-[0.3em] mb-2">01 — MEAT</p>
+        <h3 class="font-serif text-2xl text-white mb-4 tracking-wider">極上の肉質</h3>
+        <p class="text-sm text-gray-400 leading-loose">A5ランクの黒毛和牛のみを、信頼できる生産者から産地直送。霜降りの旨味と柔らかさを最高の状態でご提供します。</p>
+      </div>
+      <div class="text-center fade-up">
+        <div class="relative aspect-square mb-6 overflow-hidden">
+          <img src="https://placehold.co/600x600/252525/c9a84c?text=Interior" alt="空間" class="w-full h-full object-cover">
+          <div class="absolute inset-0 border border-gold/30 m-3"></div>
+        </div>
+        <p class="font-en text-gold text-sm tracking-[0.3em] mb-2">02 — SPACE</p>
+        <h3 class="font-serif text-2xl text-white mb-4 tracking-wider">寛ぎの空間</h3>
+        <p class="text-sm text-gray-400 leading-loose">全席完全個室。和の趣を活かした上質な空間で、大切な方との時間を周りを気にせずお過ごしいただけます。</p>
+      </div>
+      <div class="text-center fade-up">
+        <div class="relative aspect-square mb-6 overflow-hidden">
+          <img src="https://placehold.co/600x600/252525/c9a84c?text=Hospitality" alt="おもてなし" class="w-full h-full object-cover">
+          <div class="absolute inset-0 border border-gold/30 m-3"></div>
+        </div>
+        <p class="font-en text-gold text-sm tracking-[0.3em] mb-2">03 — HOSPITALITY</p>
+        <h3 class="font-serif text-2xl text-white mb-4 tracking-wider">心のおもてなし</h3>
+        <p class="text-sm text-gray-400 leading-loose">熟練のスタッフがお客様一人ひとりに寄り添い、最高の焼き加減と心配りで特別な体験をお届けいたします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Course -->
+<section id="course" class="py-24 md:py-32 bg-ink relative">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― SPECIAL COURSE ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">お す す め コ ー ス</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Course 1 -->
+      <div class="bg-ink-soft border border-gold/20 hover:border-gold transition group fade-up">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://placehold.co/600x450/252525/c9a84c?text=Standard" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+        </div>
+        <div class="p-8 text-center">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-2">STANDARD</p>
+          <h3 class="font-serif text-2xl text-white mb-4">雅 — みやび —</h3>
+          <div class="w-12 h-px bg-gold/40 mx-auto mb-4"></div>
+          <p class="text-xs text-gray-400 leading-loose mb-6">前菜・サラダ・厳選和牛5種・〆の一品・デザート（全8品）</p>
+          <p class="font-en text-3xl text-gold mb-1">¥8,800</p>
+          <p class="text-[10px] text-gray-500 tracking-wider">税込・お一人様</p>
+        </div>
+      </div>
+      <!-- Course 2 (popular) -->
+      <div class="bg-ink-soft border-2 border-gold relative shadow-2xl shadow-gold/10 group fade-up md:-mt-4">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-ink px-4 py-1 text-[10px] font-bold tracking-[0.2em]">POPULAR</div>
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://placehold.co/600x450/252525/c9a84c?text=Premium" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+        </div>
+        <div class="p-8 text-center">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-2">PREMIUM</p>
+          <h3 class="font-serif text-2xl text-white mb-4">匠 — たくみ —</h3>
+          <div class="w-12 h-px bg-gold/40 mx-auto mb-4"></div>
+          <p class="text-xs text-gray-400 leading-loose mb-6">前菜3種・特選和牛8種・季節の逸品・〆・デザート（全12品）</p>
+          <p class="font-en text-3xl text-gold mb-1">¥13,200</p>
+          <p class="text-[10px] text-gray-500 tracking-wider">税込・お一人様</p>
+        </div>
+      </div>
+      <!-- Course 3 -->
+      <div class="bg-ink-soft border border-gold/20 hover:border-gold transition group fade-up">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://placehold.co/600x450/252525/c9a84c?text=Luxury" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+        </div>
+        <div class="p-8 text-center">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-2">LUXURY</p>
+          <h3 class="font-serif text-2xl text-white mb-4">極 — きわみ —</h3>
+          <div class="w-12 h-px bg-gold/40 mx-auto mb-4"></div>
+          <p class="text-xs text-gray-400 leading-loose mb-6">最高級部位・希少和牛10種・伊勢海老・松茸など（全15品）</p>
+          <p class="font-en text-3xl text-gold mb-1">¥19,800</p>
+          <p class="text-[10px] text-gray-500 tracking-wider">税込・お一人様</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Highlights -->
+<section id="menu" class="py-24 md:py-32 bg-ink-soft">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― MENU HIGHLIGHTS ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">逸 品 の 数 々</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid grid-cols-2 gap-4 md:gap-6">
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=特選+ロース" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">特選ロース</p>
+            <p class="text-gold font-en text-sm">Loin</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=シャトーブリアン" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">シャトーブリアン</p>
+            <p class="text-gold font-en text-sm">Chateaubriand</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=極上タン" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">極上タン</p>
+            <p class="text-gold font-en text-sm">Premium Tongue</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=ハラミ" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">和牛ハラミ</p>
+            <p class="text-gold font-en text-sm">Skirt Steak</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=ユッケ" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">和牛ユッケ</p>
+            <p class="text-gold font-en text-sm">Yukhoe</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden aspect-square fade-up">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=石焼ビビンバ" alt="" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent flex items-end p-5">
+          <div>
+            <p class="font-serif text-white text-lg md:text-xl">石焼ビビンバ</p>
+            <p class="text-gold font-en text-sm">Bibimbap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Private Room -->
+<section id="room" class="py-24 md:py-32 bg-ink">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― PRIVATE ROOM ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">個 室 の ご 案 内</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-ink-soft border border-gold/20 fade-up">
+        <img src="https://placehold.co/600x400/252525/c9a84c?text=2+Persons" alt="2名個室" class="w-full aspect-[3/2] object-cover">
+        <div class="p-6">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-1">FOR 2 GUESTS</p>
+          <h3 class="font-serif text-xl text-white mb-3">2名様用 個室</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">記念日やデートに。落ち着いた照明と上質な調度品で、二人だけの特別な時間を演出します。</p>
+        </div>
+      </div>
+      <div class="bg-ink-soft border border-gold/20 fade-up">
+        <img src="https://placehold.co/600x400/252525/c9a84c?text=4+Persons" alt="4名個室" class="w-full aspect-[3/2] object-cover">
+        <div class="p-6">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-1">FOR 4 GUESTS</p>
+          <h3 class="font-serif text-xl text-white mb-3">4名様用 個室</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">ご家族や少人数の会食に最適。ゆとりある空間でお食事と会話をお楽しみいただけます。</p>
+        </div>
+      </div>
+      <div class="bg-ink-soft border border-gold/20 fade-up">
+        <img src="https://placehold.co/600x400/252525/c9a84c?text=8+Persons" alt="8名個室" class="w-full aspect-[3/2] object-cover">
+        <div class="p-6">
+          <p class="font-en text-gold text-xs tracking-[0.3em] mb-1">FOR 8 GUESTS</p>
+          <h3 class="font-serif text-xl text-white mb-3">8名様用 個室</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">接待や歓送迎会に。重厚感のある空間で、大切なビジネスシーンをサポートいたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Voice -->
+<section class="py-24 md:py-32 bg-ink-soft">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― CUSTOMER VOICE ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">お 客 様 の 声</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border border-gold/20 p-8 hover:border-gold/60 transition fade-up">
+        <div class="text-gold mb-4 tracking-widest">★★★★★</div>
+        <p class="font-serif text-white text-lg mb-4 leading-relaxed">「接待で大変喜ばれました」</p>
+        <p class="text-sm text-gray-400 leading-loose mb-6">取引先との大事な会食で利用しました。お肉の質はもちろん、個室の雰囲気と細やかな接客で、先方にも大変喜んでいただけました。</p>
+        <p class="text-xs text-gold/70 font-en tracking-widest">— K.S. / 40s, Executive</p>
+      </div>
+      <div class="border border-gold/20 p-8 hover:border-gold/60 transition fade-up">
+        <div class="text-gold mb-4 tracking-widest">★★★★★</div>
+        <p class="font-serif text-white text-lg mb-4 leading-relaxed">「結婚記念日に最高でした」</p>
+        <p class="text-sm text-gray-400 leading-loose mb-6">結婚10周年の記念日に伺いました。サプライズのデザートプレートまで用意していただき、忘れられない夜になりました。また必ず伺います。</p>
+        <p class="text-xs text-gold/70 font-en tracking-widest">— Y.T. / 30s, Couple</p>
+      </div>
+      <div class="border border-gold/20 p-8 hover:border-gold/60 transition fade-up">
+        <div class="text-gold mb-4 tracking-widest">★★★★★</div>
+        <p class="font-serif text-white text-lg mb-4 leading-relaxed">「シャトーブリアンが絶品」</p>
+        <p class="text-sm text-gray-400 leading-loose mb-6">これまで色々な焼肉店に行きましたが、こちらのシャトーブリアンは別格です。口に入れた瞬間とろけます。極コースは値段以上の価値がありました。</p>
+        <p class="text-xs text-gold/70 font-en tracking-widest">— M.H. / 50s, Gourmet</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Access -->
+<section id="access" class="py-24 md:py-32 bg-ink">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16 fade-up">
+      <p class="section-title-en">― ACCESS ―</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-white mt-4 tracking-wider">ア ク セ ス</h2>
+      <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10 fade-up">
+      <div class="aspect-[4/3] overflow-hidden border border-gold/30">
+        <img src="https://placehold.co/800x600/252525/c9a84c?text=Google+Map" alt="地図" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <h3 class="font-serif text-2xl text-gold mb-6">炭火焼肉 和牛亭</h3>
+        <table class="w-full text-sm border-t border-gold/20">
+          <tbody class="divide-y divide-gold/10">
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest w-32 align-top">ADDRESS</th>
+              <td class="py-4 text-gray-300 leading-relaxed">〒810-0000<br>福岡県福岡市中央区天神X-X-X 和牛亭ビル1F</td>
+            </tr>
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest align-top">TEL</th>
+              <td class="py-4 text-gray-300 font-en text-lg">092-000-0000</td>
+            </tr>
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest align-top">OPEN</th>
+              <td class="py-4 text-gray-300 leading-relaxed">17:00 - 23:00（L.O. 22:00）</td>
+            </tr>
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest align-top">CLOSE</th>
+              <td class="py-4 text-gray-300">日曜定休</td>
+            </tr>
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest align-top">ACCESS</th>
+              <td class="py-4 text-gray-300 leading-relaxed">地下鉄 天神駅より徒歩4分</td>
+            </tr>
+            <tr>
+              <th class="py-4 text-left font-en text-gold/70 text-xs tracking-widest align-top">PARKING</th>
+              <td class="py-4 text-gray-300 leading-relaxed">提携駐車場あり（3時間まで無料サービス）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="py-24 md:py-32 relative bg-ink-soft border-y border-gold/30">
+  <div class="absolute inset-0 opacity-10">
+    <img src="https://placehold.co/1920x600/1a1a1a/c9a84c?text=" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="relative max-w-3xl mx-auto px-6 text-center fade-up">
+    <p class="section-title-en mb-4">― RESERVATION ―</p>
+    <h2 class="font-serif text-3xl md:text-5xl text-white mb-6 tracking-wider leading-relaxed">特別な夜の、<br>ご予約を承ります</h2>
+    <div class="w-16 h-px bg-gold mx-auto mb-6"></div>
+    <p class="text-sm text-gray-400 mb-12 leading-loose">完全予約制となっております。<br>大切な方とのお時間を、心を込めてお迎えいたします。</p>
+    <div class="flex flex-col md:flex-row gap-5 justify-center">
+      <a href="tel:092-000-0000" class="flex flex-col items-center justify-center bg-gold text-ink px-10 py-6 hover:bg-gold-light transition group w-full md:w-72">
+        <i class="ph-fill ph-phone text-3xl mb-2"></i>
+        <span class="text-[10px] tracking-[0.3em]">CALL</span>
+        <span class="font-en text-2xl mt-1">092-000-0000</span>
+      </a>
+      <a href="#" class="flex flex-col items-center justify-center border border-gold text-gold px-10 py-6 hover:bg-gold/10 transition w-full md:w-72">
+        <i class="ph ph-calendar-check text-3xl mb-2"></i>
+        <span class="text-[10px] tracking-[0.3em]">ONLINE</span>
+        <span class="font-en text-2xl mt-1">Web Reserve</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink py-10 border-t border-gold/20 text-center">
+  <p class="font-en text-gold text-2xl tracking-[0.3em] mb-2">和牛亭</p>
+  <p class="text-[10px] text-gray-500 font-en tracking-widest">&copy; 2026 WAGYUTEI ALL RIGHTS RESERVED.</p>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<div class="fixed bottom-0 inset-x-0 z-50 md:hidden bg-ink border-t border-gold/30 flex">
+  <a href="tel:092-000-0000" class="flex-1 py-4 flex flex-col items-center text-gold border-r border-gold/20">
+    <i class="ph-fill ph-phone text-xl"></i>
+    <span class="text-[10px] tracking-widest mt-1">CALL</span>
+  </a>
+  <a href="#cta" class="flex-1 py-4 flex flex-col items-center bg-gold text-ink">
+    <i class="ph ph-calendar-check text-xl"></i>
+    <span class="text-[10px] tracking-widest mt-1 font-bold">RESERVE</span>
+  </a>
+</div>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
