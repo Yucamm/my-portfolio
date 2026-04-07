@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yukai Works | LP+Webシステム構築フリーランス</title>
+<meta name="description" content="集客できるLPと、業務を効率化するWebシステムを、まとめて制作するフリーランスエンジニアのポートフォリオ。">
+<meta property="og:title" content="Yukai Works | LP+Webシステム構築">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        bg: '#0a0a0a',
+        surface: '#141414',
+        border: '#262626',
+        accent: '#a3e635', // lime
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<style>
+body { font-family: Inter, sans-serif; background: #0a0a0a; color: #e5e5e5; }
+.fade-up { opacity: 0; transform: translateY(20px); transition: all .8s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(163,230,53,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(163,230,53,.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+</style>
+</head>
+<body class="bg-bg">
+
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-50 bg-bg/80 backdrop-blur border-b border-border">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="font-mono text-sm text-accent">&lt;yukai.dev /&gt;</a>
+    <nav class="hidden md:flex gap-8 text-xs tracking-widest text-gray-400">
+      <a href="#services" class="hover:text-accent transition">SERVICES</a>
+      <a href="#works" class="hover:text-accent transition">WORKS</a>
+      <a href="#price" class="hover:text-accent transition">PRICE</a>
+      <a href="#flow" class="hover:text-accent transition">FLOW</a>
+      <a href="#contact" class="hover:text-accent transition">CONTACT</a>
+    </nav>
+    <a href="#contact" class="text-xs font-bold bg-accent text-bg px-4 py-2 rounded-full hover:brightness-110 transition">お問い合わせ</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative pt-40 pb-32 grid-bg overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-bg/50 to-bg"></div>
+  <div class="relative max-w-6xl mx-auto px-6">
+    <div class="fade-up">
+      <div class="inline-flex items-center gap-2 bg-surface border border-border rounded-full px-4 py-1.5 mb-8">
+        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+        <span class="text-xs text-gray-400 font-mono">AVAILABLE FOR WORK</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.3] tracking-tight mb-8">
+        集客できるLP＋<br>
+        業務を効率化する<br>
+        <span class="text-accent">システム、</span>まとめて作ります。
+      </h1>
+      <p class="text-gray-400 text-base md:text-lg leading-relaxed max-w-2xl mb-10">
+        静的なランディングページだけでなく、予約システム・料金シミュレーター・フォーム連携まで。<br>
+        デザインから実装、外部サービス連携まで1人で完結させます。
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#works" class="bg-accent text-bg font-bold px-8 py-4 rounded-full hover:brightness-110 transition flex items-center gap-2">
+          実績を見る <i class="ph ph-arrow-right"></i>
+        </a>
+        <a href="#contact" class="border border-border hover:border-accent text-white font-bold px-8 py-4 rounded-full transition flex items-center gap-2">
+          <i class="ph ph-envelope"></i> 相談する
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24 border-t border-border">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 fade-up">
+      <p class="font-mono text-xs text-accent tracking-widest mb-3">// 01 — SERVICES</p>
+      <h2 class="text-3xl md:text-5xl font-black">できること</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-surface border border-border rounded-2xl p-6 hover:border-accent transition fade-up">
+        <i class="ph-duotone ph-browser text-4xl text-accent mb-4"></i>
+        <h3 class="font-bold text-lg mb-2">LP制作</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">コンバージョンを意識したランディングページ。Tailwind + モダンCSSでレスポンシブ対応。</p>
+      </div>
+      <div class="bg-surface border border-border rounded-2xl p-6 hover:border-accent transition fade-up">
+        <i class="ph-duotone ph-calendar-check text-4xl text-accent mb-4"></i>
+        <h3 class="font-bold text-lg mb-2">予約システム構築</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Calendly等の外部サービス連携、またはフルカスタムの予約管理システム構築。</p>
+      </div>
+      <div class="bg-surface border border-border rounded-2xl p-6 hover:border-accent transition fade-up">
+        <i class="ph-duotone ph-calculator text-4xl text-accent mb-4"></i>
+        <h3 class="font-bold text-lg mb-2">料金シミュレーター</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">リアルタイム計算するJavaScript製シミュレーター。複雑な条件分岐もOK。</p>
+      </div>
+      <div class="bg-surface border border-border rounded-2xl p-6 hover:border-accent transition fade-up">
+        <i class="ph-duotone ph-envelope-simple text-4xl text-accent mb-4"></i>
+        <h3 class="font-bold text-lg mb-2">フォーム構築</h3>
+        <p class="text-xs text-gray-400 leading-relaxed">Formspree等と連携したバリデーション付き高品質フォーム。サーバー不要。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works -->
+<section id="works" class="py-24 border-t border-border">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 fade-up">
+      <p class="font-mono text-xs text-accent tracking-widest mb-3">// 02 — WORKS</p>
+      <h2 class="text-3xl md:text-5xl font-black">制作実績</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <a href="bloom-salon-static.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-[#f5f0eb]">
+          <img src="https://placehold.co/600x340/f5f0eb/8b7355?text=BLOOM+Salon" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">BEAUTY / STATIC</span>
+          </div>
+          <h3 class="font-bold mb-1">Hair Salon BLOOM</h3>
+          <p class="text-xs text-gray-400">渋谷の高級プライベートサロンLP</p>
+        </div>
+      </a>
+
+      <a href="bloom-salon.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-[#f5f0eb]">
+          <img src="https://placehold.co/600x340/f5f0eb/8b7355?text=BLOOM+%2B+Calendly" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">BEAUTY</span>
+            <span class="text-[10px] bg-accent text-bg px-2 py-0.5 rounded font-bold">機能付き</span>
+          </div>
+          <h3 class="font-bold mb-1">BLOOM + 予約システム</h3>
+          <p class="text-xs text-gray-400">Calendlyインライン予約ウィジェット統合</p>
+        </div>
+      </a>
+
+      <a href="sakura-seikotsuin-static.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-white">
+          <img src="https://placehold.co/600x340/ffffff/2d8a6e?text=SAKURA+Clinic" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">MEDICAL / STATIC</span>
+          </div>
+          <h3 class="font-bold mb-1">さくら整骨院</h3>
+          <p class="text-xs text-gray-400">交通事故専門・医療系LP</p>
+        </div>
+      </a>
+
+      <a href="sakura-seikotsuin.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-white">
+          <img src="https://placehold.co/600x340/ffffff/2d8a6e?text=SAKURA+%2B+Simulator" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">MEDICAL</span>
+            <span class="text-[10px] bg-accent text-bg px-2 py-0.5 rounded font-bold">機能付き</span>
+          </div>
+          <h3 class="font-bold mb-1">さくら整骨院 + 料金シミュレーター</h3>
+          <p class="text-xs text-gray-400">症状×保険×頻度のリアルタイム計算</p>
+        </div>
+      </a>
+
+      <a href="wagyutei-static.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-[#1a1a1a]">
+          <img src="https://placehold.co/600x340/1a1a1a/c9a84c?text=WAGYUTEI" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">RESTAURANT / STATIC</span>
+          </div>
+          <h3 class="font-bold mb-1">炭火焼肉 和牛亭</h3>
+          <p class="text-xs text-gray-400">高級焼肉店の接待向けLP</p>
+        </div>
+      </a>
+
+      <a href="wagyutei.html" class="group bg-surface border border-border rounded-2xl overflow-hidden hover:border-accent transition fade-up">
+        <div class="aspect-video overflow-hidden bg-[#1a1a1a]">
+          <img src="https://placehold.co/600x340/1a1a1a/c9a84c?text=WAGYUTEI+%2B+Form" alt="" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-[10px] font-mono text-gray-500">RESTAURANT</span>
+            <span class="text-[10px] bg-accent text-bg px-2 py-0.5 rounded font-bold">機能付き</span>
+          </div>
+          <h3 class="font-bold mb-1">和牛亭 + 予約フォーム</h3>
+          <p class="text-xs text-gray-400">Formspree連携・バリデーション実装</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Price -->
+<section id="price" class="py-24 border-t border-border">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 fade-up">
+      <p class="font-mono text-xs text-accent tracking-widest mb-3">// 03 — PRICE</p>
+      <h2 class="text-3xl md:text-5xl font-black">料金目安</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-surface border border-border rounded-2xl p-8 fade-up hover:border-accent/50 transition">
+        <p class="text-xs text-gray-500 font-mono mb-2">PLAN.01</p>
+        <h3 class="text-2xl font-bold mb-4">LP 基本</h3>
+        <p class="text-xs text-gray-400 mb-6">静的ランディングページのみ。デザイン〜実装まで。</p>
+        <div class="mb-6">
+          <span class="text-4xl font-black">¥80,000</span>
+          <span class="text-xs text-gray-500">〜</span>
+        </div>
+        <ul class="space-y-2 text-xs text-gray-400">
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> LP 1ページ</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> レスポンシブ対応</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 簡易SEO設定</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 修正2回まで</li>
+        </ul>
+      </div>
+
+      <div class="bg-surface border-2 border-accent rounded-2xl p-8 fade-up relative shadow-2xl shadow-accent/10">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-bg text-[10px] font-black tracking-widest px-3 py-1 rounded-full">POPULAR</span>
+        <p class="text-xs text-accent font-mono mb-2">PLAN.02</p>
+        <h3 class="text-2xl font-bold mb-4">LP ＋ 機能</h3>
+        <p class="text-xs text-gray-400 mb-6">LPに1つの機能（予約/シミュレーター/フォーム）を追加。</p>
+        <div class="mb-6">
+          <span class="text-4xl font-black text-accent">¥150,000</span>
+          <span class="text-xs text-gray-500">〜</span>
+        </div>
+        <ul class="space-y-2 text-xs text-gray-400">
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> LP 基本の全項目</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 1機能の実装</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 外部サービス連携</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 修正3回まで</li>
+        </ul>
+      </div>
+
+      <div class="bg-surface border border-border rounded-2xl p-8 fade-up hover:border-accent/50 transition">
+        <p class="text-xs text-gray-500 font-mono mb-2">PLAN.03</p>
+        <h3 class="text-2xl font-bold mb-4">フルカスタム</h3>
+        <p class="text-xs text-gray-400 mb-6">複数機能・管理画面・DB連携などフルオーダー開発。</p>
+        <div class="mb-6">
+          <span class="text-4xl font-black">¥300,000</span>
+          <span class="text-xs text-gray-500">〜</span>
+        </div>
+        <ul class="space-y-2 text-xs text-gray-400">
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 複数ページ/機能</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> DB/API実装</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 管理画面付き</li>
+          <li class="flex items-center gap-2"><i class="ph ph-check text-accent"></i> 保守サポート</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-center text-xs text-gray-500 mt-8">※ 税別。要件によってお見積りが変動します。お気軽にご相談ください。</p>
+  </div>
+</section>
+
+<!-- Flow -->
+<section id="flow" class="py-24 border-t border-border">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="mb-16 fade-up">
+      <p class="font-mono text-xs text-accent tracking-widest mb-3">// 04 — FLOW</p>
+      <h2 class="text-3xl md:text-5xl font-black">制作の流れ</h2>
+    </div>
+    <div class="space-y-4">
+      <div class="flex gap-5 fade-up bg-surface border border-border rounded-xl p-5 hover:border-accent/50 transition">
+        <div class="font-mono text-accent text-2xl font-bold w-14 flex-shrink-0">01</div>
+        <div>
+          <h3 class="font-bold mb-1">ヒアリング</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">ビジネス内容・目的・必要な機能をお伺いします。無料。</p>
+        </div>
+      </div>
+      <div class="flex gap-5 fade-up bg-surface border border-border rounded-xl p-5 hover:border-accent/50 transition">
+        <div class="font-mono text-accent text-2xl font-bold w-14 flex-shrink-0">02</div>
+        <div>
+          <h3 class="font-bold mb-1">お見積り・ご契約</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">要件に基づいたお見積書を提示。内容合意後にご契約。</p>
+        </div>
+      </div>
+      <div class="flex gap-5 fade-up bg-surface border border-border rounded-xl p-5 hover:border-accent/50 transition">
+        <div class="font-mono text-accent text-2xl font-bold w-14 flex-shrink-0">03</div>
+        <div>
+          <h3 class="font-bold mb-1">デザイン・実装</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">デザイン→実装→機能組み込みまで進めます。途中共有あり。</p>
+        </div>
+      </div>
+      <div class="flex gap-5 fade-up bg-surface border border-border rounded-xl p-5 hover:border-accent/50 transition">
+        <div class="font-mono text-accent text-2xl font-bold w-14 flex-shrink-0">04</div>
+        <div>
+          <h3 class="font-bold mb-1">確認・修正</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">プレビュー環境でご確認いただき、修正対応。</p>
+        </div>
+      </div>
+      <div class="flex gap-5 fade-up bg-surface border border-border rounded-xl p-5 hover:border-accent/50 transition">
+        <div class="font-mono text-accent text-2xl font-bold w-14 flex-shrink-0">05</div>
+        <div>
+          <h3 class="font-bold mb-1">納品・公開</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">サーバー設定・公開までサポート。納品後もご相談OK。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 border-t border-border relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-50"></div>
+  <div class="relative max-w-3xl mx-auto px-6 text-center fade-up">
+    <p class="font-mono text-xs text-accent tracking-widest mb-3">// 05 — CONTACT</p>
+    <h2 class="text-3xl md:text-5xl font-black mb-6">お気軽に<br class="md:hidden">ご相談ください</h2>
+    <p class="text-gray-400 mb-12 leading-relaxed text-sm md:text-base">
+      LP・システム制作のご依頼、お見積り、ちょっとした相談まで。<br>
+      通常1営業日以内に返信いたします。
+    </p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <a href="mailto:hello@yukai.dev" class="flex items-center justify-center gap-3 bg-accent text-bg px-6 py-5 rounded-2xl font-bold hover:brightness-110 transition">
+        <i class="ph-fill ph-envelope text-2xl"></i>
+        <div class="text-left">
+          <div class="text-[10px] font-mono">EMAIL</div>
+          <div>hello@yukai.dev</div>
+        </div>
+      </a>
+      <a href="#" class="flex items-center justify-center gap-3 bg-surface border border-border hover:border-accent text-white px-6 py-5 rounded-2xl font-bold transition">
+        <i class="ph-fill ph-storefront text-2xl text-accent"></i>
+        <div class="text-left">
+          <div class="text-[10px] font-mono text-gray-500">COCONALA</div>
+          <div>ココナラで依頼</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-border py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-mono text-xs text-gray-500">&lt;yukai.dev /&gt; © 2026</p>
+    <p class="text-[10px] text-gray-600 tracking-widest">BUILT WITH TAILWIND + COFFEE</p>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
